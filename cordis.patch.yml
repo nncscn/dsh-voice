@@ -1,0 +1,3 @@
+- insert:
+    - id: asr-voice-button
+      name: '@nncs/dsh-asr-voice'

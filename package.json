@@ -1,0 +1,32 @@
+﻿{
+  "name": "@nncs/dsh-asr-voice",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Voice input for the DeepSeek Harness composer: record speech, transcribe it through any OpenAI-compatible ASR endpoint, and insert the text into the draft.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "asr", "speech-to-text", "voice-input", "whisper"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation", "@deepseek-ai/dsh-client-locale"]
+    }
+  }
+}

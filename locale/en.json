@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "Voice Input (Qwen3-ASR)",
+    "description": "Adds a microphone button to the composer: records speech, transcribes it with the local Qwen3-ASR service, and inserts the text into the draft."
+  },
+  "button.idle": "Voice input",
+  "button.recording": "Stop and transcribe",
+  "button.transcribing": "Transcribing…",
+  "button.error": "Voice input failed, click to retry",
+  "error.permission": "Microphone permission denied",
+  "error.network": "Cannot reach the Qwen3-ASR service",
+  "error.auth": "The ASR service rejected the API key",
+  "error.empty": "No speech recognized",
+  "error.tooShort": "Recording too short",
+  "error.server": "The ASR service returned an error",
+  "fallback.copied": "Transcript copied to the clipboard"
+}

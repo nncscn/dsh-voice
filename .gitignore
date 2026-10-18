@@ -1,0 +1,3 @@
+﻿.npmrc
+*.tgz
+node_modules/
