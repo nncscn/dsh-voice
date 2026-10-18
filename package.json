@@ -1,6 +1,6 @@
 ﻿{
-  "name": "@nncs/dsh-asr-voice",
-  "version": "1.0.0",
+  "name": "@nncs/dsh-voice",
+  "version": "1.0.1",
   "private": false,
   "description": "Voice input for the DeepSeek Harness composer: record speech, transcribe it through any OpenAI-compatible ASR endpoint, and insert the text into the draft.",
   "license": "MIT",

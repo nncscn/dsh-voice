@@ -1,5 +1,5 @@
 ﻿window.__ModuleLoader__.load({
-  id: '@nncs/dsh-asr-voice',
+  id: '@nncs/dsh-voice',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
@@ -14,7 +14,7 @@
       createPortal = null;
     }
 
-    const NS = '@nncs/dsh-asr-voice';
+    const NS = '@nncs/dsh-voice';
 
     const ENDPOINT = '';
     const API_KEY = '';
@@ -29,7 +29,7 @@
       endpoint: ENDPOINT,
       apiKey: API_KEY,
       language: LANGUAGE,
-      model: 'Qwen3-ASR-1.7B',
+      model: '',
       protocol: 'openai',
       authHeader: '',
       responsePath: '',
@@ -198,7 +198,7 @@
       'button.error': '语音输入失败，点击重试',
       'error.permission': '麦克风权限被拒绝',
       'error.microphone': '无法使用麦克风',
-      'error.network': '无法连接 Qwen3-ASR 服务',
+      'error.network': '无法连接语音服务',
       'error.auth': 'ASR 服务拒绝了 API Key',
       'error.empty': '没有识别到语音',
       'error.tooShort': '录音时间太短',
@@ -244,7 +244,7 @@
       'button.error': 'Voice input failed, click to retry',
       'error.permission': 'Microphone permission denied',
       'error.microphone': 'Microphone unavailable',
-      'error.network': 'Cannot reach the Qwen3-ASR service',
+      'error.network': 'Cannot reach the speech service',
       'error.auth': 'The ASR service rejected the API key',
       'error.empty': 'No speech recognized',
       'error.tooShort': 'Recording too short',
@@ -1209,7 +1209,7 @@
                   h('input', {
                     className: 'asr-input',
                     value: draft.model,
-                    placeholder: 'Qwen3-ASR-1.7B',
+                    placeholder: 'whisper-1',
                     spellCheck: false,
                     onChange: (event) => setDraft(Object.assign({}, draft, { model: event.target.value })),
                   }),

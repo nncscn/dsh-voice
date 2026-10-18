@@ -1,4 +1,4 @@
-# DSH 语音输入插件
+﻿# DSH 语音输入插件
 
 给 DeepSeek Harness 的输入框加一个麦克风按钮：**点一下开始录音，再点一下结束，文字自动插入光标处**。
 
@@ -34,19 +34,19 @@
 
 ```bash
 # 方式 A：克隆仓库
-git clone https://github.com/nncscn/dsh-asr-voice.git
+git clone https://github.com/nncscn/dsh-voice.git
 ```
 
 或直接下载发布页的压缩包：
 
-**https://github.com/nncscn/dsh-asr-voice/releases**
+**https://github.com/nncscn/dsh-voice/releases**
 
 **② 安装到 Harness**
 
 在 Harness 的对话里让 AI 执行，或用插件管理界面：
 
 ```
-plugin_manager  install_bundle  target: "你解压出来的 dsh-asr-voice 目录"
+plugin_manager  install_bundle  target: "你解压出来的 dsh-voice 目录"
 ```
 
 安装成功后，**输入框右侧、发送按钮左边**就会出现麦克风图标（见上图）。

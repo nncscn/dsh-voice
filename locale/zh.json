@@ -1,14 +1,14 @@
-{
+﻿{
   "meta": {
-    "title": "语音输入（Qwen3-ASR）",
-    "description": "在输入框加一个麦克风按钮：录音后用本地 Qwen3-ASR 服务转写，并把文字插入草稿。"
+    "title": "语音输入",
+    "description": "在输入框加一个麦克风按钮：录音后用你自己的语音识别服务转写，并把文字插入草稿。"
   },
   "button.idle": "语音输入",
   "button.recording": "停止并转写",
   "button.transcribing": "转写中…",
   "button.error": "语音输入失败，点击重试",
   "error.permission": "麦克风权限被拒绝",
-  "error.network": "无法连接 Qwen3-ASR 服务",
+  "error.network": "无法连接语音服务",
   "error.auth": "ASR 服务拒绝了 API Key",
   "error.empty": "没有识别到语音",
   "error.tooShort": "录音时间太短",
